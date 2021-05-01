@@ -1,0 +1,7 @@
+<%# commentsコントローラーのcreateアクションでrespond_to :jsというコードを追加した。
+フォーマットをJS形式にした場合、出力するファイルはapp/views/コントローラ名/アクション名.js.erbになる。
+この場合は、app/views/comment/create.js.erbになる。 %>
+
+$('#comment-post-<%= @post.id.to_s %>').
+  html('<%= j render "posts/comment_list", { post: @post } %>');
+$('#comment-form-post-<%= @post.id.to_s %> #comment_comment').val("");

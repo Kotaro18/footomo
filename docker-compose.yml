@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  local-redis:
+    image: redis
+    container_name: rails-redis2
+
+  local-rails:
+    build: .
+    ports:
+      # - "3000:3000"
+      - "80:3000"
+    depends_on:
+      - local-redis
+    env_file:
+      - env_file.env
+    container_name: rails-rails2
+    command:
+      bundle exec rails s -b 0.0.0.0
+      # bundle exec rails s -e production
+    environment:
+      RAILS_DATABASE_PASSWORD: blago18
+      RAILS_DATABASE_HOST: db
+      RAILS_DATABASE_USER: blago18
+      RAILS_ENV: development
+    volumes:
+      - .:/var/www/blagram-docker
+
+  db:
+    image: mysql
+    volumes:
+      - mysql-data:/var/lib/mysql
+    # ports:
+    # - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: MySQL8.0
+      MYSQL_DATABASE: app_development
+      MYSQL_USER: blago18
+      MYSQL_PASSWORD: blago18
+    command:
+      - --default-authentication-plugin=mysql_native_password
+
+volumes:
+  mysql-data:

@@ -1,0 +1,22 @@
+{
+  "application.js": "/packs/js/application-958e72b12def9ffe22c3.js",
+  "application.js.map": "/packs/js/application-958e72b12def9ffe22c3.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-958e72b12def9ffe22c3.js"
+      ],
+      "js.map": [
+        "/packs/js/application-958e72b12def9ffe22c3.js.map"
+      ]
+    }
+  },
+  "media/images/logo.png": "/packs/media/images/logo-669657a5f2b65eef42a324b6ddb0c3b1.png",
+  "media/images/parts3.png": "/packs/media/images/parts3-6d18acf526dfade839f1ef51751ee69c.png",
+  "media/images/parts4.png": "/packs/media/images/parts4-daf067db8df707c8b11dbaaa3e0fd4e6.png",
+  "media/images/parts5.png": "/packs/media/images/parts5-6ee5aa1fd95bb3bf25eb17ffa0449328.png",
+  "media/images/parts6.png": "/packs/media/images/parts6-ce4545c7a00bdfb70a6224b26c7e7ff7.png",
+  "media/images/parts7.png": "/packs/media/images/parts7-659f1b646250bad6312564637bafb1b9.png",
+  "media/images/parts8.png": "/packs/media/images/parts8-941e5142f173a93adf69215a104960c8.png",
+  "media/images/parts9.png": "/packs/media/images/parts9-cbdd273352fd3ef7651ff85362e90572.png"
+}

@@ -1,0 +1,9 @@
+<%# likesコントローラーのcreateアクションでrespond_to :jsというコードを追加した。
+フォーマットをJS形式にした場合、出力するファイルはapp/views/コントローラ名/アクション名.js.erbになる。 %>
+
+$('#like-icon-post-<%= @post.id.to_s %>').
+  html('<%= link_to "いいねを取り消す", post_like_path(@post.id, @like), method: :DELETE, remote: true, class: "loved hide-text" %>');
+$('#like-text-post-<%= @post.id.to_s %>').
+  html('<%= j render "posts/like_text", { likes: @post.likes } %>');
+<%# .html（’htmlString')というコードで、マッチした1爪の要素のHTMLを変更する。 %>
+<%# 今回の場合、いいねを押したら、いいねを取り消すHTMLを表示する様にしている。 %>
