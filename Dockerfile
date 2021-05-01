@@ -10,12 +10,12 @@
 FROM ruby:2.7.2
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
 
-COPY ./ /var/www/blagram-docker
+COPY ./ /var/www/footomo
 
-WORKDIR /var/www/blagram-docker
+WORKDIR /var/www/footomo
 
-COPY Gemfile /var/www/blagram-docker
-COPY Gemfile.lock /var/www/blagram-docker
+COPY Gemfile /var/www/footomo
+COPY Gemfile.lock /var/www/footomo
 
 RUN apt-get update
 RUN apt-get upgrade -y

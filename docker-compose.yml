@@ -3,7 +3,7 @@ version: "3"
 services:
   local-redis:
     image: redis
-    container_name: rails-redis2
+    container_name: rails-redis3
 
   local-rails:
     build: .
@@ -14,7 +14,7 @@ services:
       - local-redis
     env_file:
       - env_file.env
-    container_name: rails-rails2
+    container_name: rails-rails3
     command:
       bundle exec rails s -b 0.0.0.0
       # bundle exec rails s -e production
@@ -24,7 +24,7 @@ services:
       RAILS_DATABASE_USER: blago18
       RAILS_ENV: development
     volumes:
-      - .:/var/www/blagram-docker
+      - .:/var/www/footomo
 
   db:
     image: mysql
