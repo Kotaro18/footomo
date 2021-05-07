@@ -5202,3 +5202,205 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 295ms (Views: 246.0ms | ActiveRecord: 35.3ms | Allocations: 9659)
 
 
+Started GET "/" for 172.19.0.1 at 2021-05-06 23:57:03 +0000
+  [1m[35m (17.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 89ms (ActiveRecord: 0.0ms | Allocations: 3208)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-05-06 23:57:04 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___1043777159047351168_19560 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 67.3ms | Allocations: 1433)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:13:in ``': No such file or directory - yarn (Errno::ENOENT)
+	from /usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:13:in `initialize'
+	from /usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:6:in `new'
+	from /usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered partial/_footer.html.erb (Duration: 14.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 873.3ms | Allocations: 4778)
+Completed 200 OK in 1017ms (Views: 971.2ms | ActiveRecord: 13.2ms | Allocations: 13622)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-05-07 00:01:47 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___1043777159047351168_19560 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 479)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 94.9ms | Allocations: 2372)
+Completed 200 OK in 107ms (Views: 103.5ms | ActiveRecord: 0.0ms | Allocations: 3107)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-05-07 00:01:48 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___1043777159047351168_19560 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 82.4ms | Allocations: 2357)
+Completed 200 OK in 93ms (Views: 91.3ms | ActiveRecord: 0.0ms | Allocations: 3105)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-05-07 00:03:47 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___1043777159047351168_19560 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 89.5ms | Allocations: 2360)
+Completed 200 OK in 100ms (Views: 95.7ms | Allocations: 3119)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-05-07 00:10:12 +0000
+  [1m[35m (16.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___3188366069711293857_19500 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 93.7ms | Allocations: 1827)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:13:in ``': No such file or directory - yarn (Errno::ENOENT)
+	from /usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:13:in `initialize'
+	from /usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:6:in `new'
+	from /usr/local/bundle/gems/webpacker-5.3.0/lib/webpacker/runner.rb:6:in `run'
+	from ./bin/webpack:17:in `block in <main>'
+	from ./bin/webpack:16:in `chdir'
+	from ./bin/webpack:16:in `<main>'
+
+  Rendered partial/_footer.html.erb (Duration: 3.7ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 939.9ms | Allocations: 5377)
+Completed 200 OK in 1160ms (Views: 1058.2ms | ActiveRecord: 12.6ms | Allocations: 15463)
+
+
+Started POST "/users/sign_in" for 172.19.0.1 at 2021-05-07 00:10:24 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"YHTethjUWmbGcpbWa0CitTJHZhKmBi9IGr0VCjMbEjGFQEN+0zOI9cqPG+7epTdMcdFUI0yv4+PgvgjdHUdMew==", "user"=>{"email"=>"irodori5mile18@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"サインインする"}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "irodori5mile18@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost/
+Completed 302 Found in 480ms (ActiveRecord: 4.7ms | Allocations: 9445)
+
+
+Started GET "/" for 172.19.0.1 at 2021-05-07 00:10:24 +0000
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 10]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mPhoto Load (6.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mLike Load (2.9ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = ? AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (3.8ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."post_id" = ? ORDER BY "likes"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 43.2ms | Allocations: 1901)
+  [1m[36mComment Load (2.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 42.2ms | Allocations: 1868)
+  Rendered posts/index.html.erb within layouts/application (Duration: 462.0ms | Allocations: 24170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered partial/_navbar.html.erb (Duration: 4.2ms | Allocations: 253)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 555.4ms | Allocations: 26457)
+Completed 200 OK in 631ms (Views: 500.3ms | ActiveRecord: 67.5ms | Allocations: 31126)
+
+

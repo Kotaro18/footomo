@@ -1,0 +1,14 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import "layouts/navbar";
+
+@import "common";
+
+@import "users/devise";
+@import "users/show";
+// users/show.scssファイルのコードを読み込めるようになる。
+@import "users/edit";
+// users/edit.scssファイルのコードを読み込めるようになる。
+@import "posts";
+// posts.scssファイルのコードを読み込めるようになる。
+
