@@ -1,6 +1,7 @@
 import 'bootstrap';
-// import '../stylesheets/application';
-import "packs/application.scss";
+import '../javascripts/application';
+import '../stylesheets/application';
+// import "packs/application.scss";
 
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in

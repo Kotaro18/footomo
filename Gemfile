@@ -61,4 +61,5 @@ gem "mini_magick"
 gem 'actionpack'
 gem 'railties', '~> 6.1', '>= 6.1.3.1'
 gem 'activemodel', '~> 6.1', '>= 6.1.3.1'
+gem 'semantic_range', '~> 3.0'
 
