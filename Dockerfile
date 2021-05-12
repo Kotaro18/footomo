@@ -9,6 +9,7 @@
 
 FROM ruby:2.7.2
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
+RUN apt install -y node.js
 
 COPY ./ /var/www/footomo
 

@@ -6207,3 +6207,119 @@ ActionView::Template::Error (The asset "application.js" is not present in the as
     15:   <body>
   
 app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-05-12 09:03:15 +0900
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 573)
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 46.5ms | Allocations: 9047)
+  Rendered layout layouts/application.html.erb (Duration: 237.6ms | Allocations: 38122)
+Completed 500 Internal Server Error in 278ms (ActiveRecord: 0.7ms | Allocations: 48869)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-05-12 09:05:07 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 125)
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1054)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 8156)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 9516)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-05-12 09:05:08 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 926)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 7883)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 9102)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-05-12 09:06:27 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 573)
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 22.5ms | Allocations: 6703)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 17337)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.5ms | Allocations: 27183)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-05-12 09:19:59 +0900
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 4.1ms | Allocations: 678)
+  Rendered /Users/kotaro18/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 25.6ms | Allocations: 6624)
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 17278)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.5ms | Allocations: 27215)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
