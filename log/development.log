@@ -6323,3 +6323,298 @@ ActionView::Template::Error (The asset "application.js" is not present in the as
     15:   <body>
   
 app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.24.0.1 at 2021-05-13 00:01:08 +0000
+  [1m[35m (12.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 573)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 312.5ms | Allocations: 9019)
+  Rendered layout layouts/application.html.erb (Duration: 1604.1ms | Allocations: 39161)
+Completed 500 Internal Server Error in 1837ms (ActiveRecord: 14.2ms | Allocations: 49904)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:03:51 +0000
+  [1m[35m (15.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 573)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 264.0ms | Allocations: 8062)
+  Rendered layout layouts/application.html.erb (Duration: 2033.0ms | Allocations: 41520)
+Completed 500 Internal Server Error in 2255ms (ActiveRecord: 11.0ms | Allocations: 52267)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/footomo/app/assets/config
+  /var/www/footomo/app/assets/images
+  /var/www/footomo/app/assets/javascript
+  /var/www/footomo/app/assets/stylesheets
+  /usr/local/bundle/gems/actioncable-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/activestorage-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-6.1.3.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /var/www/footomo/node_modules):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/assets/javascript/application.js:2
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:05:00 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 125)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1064)
+  Rendered layout layouts/application.html.erb (Duration: 353.7ms | Allocations: 8588)
+Completed 500 Internal Server Error in 367ms (ActiveRecord: 0.0ms | Allocations: 9973)
+
+
+  
+ActionView::Template::Error (application.js):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:05:05 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 77.2ms | Allocations: 5248)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.0ms | Allocations: 6492)
+
+
+  
+ActionView::Template::Error (application.js):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:05:07 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 5233)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms | Allocations: 6464)
+
+
+  
+ActionView::Template::Error (application.js):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:05:08 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 5235)
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms | Allocations: 6479)
+
+
+  
+ActionView::Template::Error (application.js):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:06:50 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 106.2ms | Allocations: 7041)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms | Allocations: 8272)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/footomo/app/assets/config
+  /var/www/footomo/app/assets/images
+  /var/www/footomo/app/assets/javascript
+  /var/www/footomo/app/assets/stylesheets
+  /usr/local/bundle/gems/actioncable-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/activestorage-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-6.1.3.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /var/www/footomo/node_modules):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/assets/javascript/application.js:1
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:07:55 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 84.4ms | Allocations: 7002)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms | Allocations: 8246)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/footomo/app/assets/config
+  /var/www/footomo/app/assets/images
+  /var/www/footomo/app/assets/javascript
+  /var/www/footomo/app/assets/stylesheets
+  /usr/local/bundle/gems/actioncable-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/activestorage-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-6.1.3.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /var/www/footomo/node_modules):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/assets/javascript/application.js:1
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:07:59 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 90.1ms | Allocations: 7000)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms | Allocations: 8231)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/footomo/app/assets/config
+  /var/www/footomo/app/assets/images
+  /var/www/footomo/app/assets/javascript
+  /var/www/footomo/app/assets/stylesheets
+  /usr/local/bundle/gems/actioncable-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/activestorage-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-6.1.3.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /var/www/footomo/node_modules):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/assets/javascript/application.js:1
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.25.0.1 at 2021-05-14 00:11:19 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 936)
+  Rendered layout layouts/application.html.erb (Duration: 79.4ms | Allocations: 7000)
+Completed 500 Internal Server Error in 89ms (Allocations: 8230)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /var/www/footomo/app/assets/config
+  /var/www/footomo/app/assets/images
+  /var/www/footomo/app/assets/javascript
+  /var/www/footomo/app/assets/stylesheets
+  /usr/local/bundle/gems/actioncable-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/activestorage-6.1.3.1/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-6.1.3.1/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /var/www/footomo/node_modules):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/assets/javascript/application.js:1
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 172.26.0.1 at 2021-05-14 00:28:25 +0000
+Cannot render console from 172.26.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (14.3ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.7ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 578)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2596.0ms | Allocations: 213590)
+  Rendered layout layouts/application.html.erb (Duration: 4341.9ms | Allocations: 236905)
+Completed 500 Internal Server Error in 4585ms (ActiveRecord: 11.9ms | Allocations: 284094)
+
+
+  
+ActionView::Template::Error (link_directory argument must be a directory):
+  
+app/assets/config/manifest.js:2

@@ -8,8 +8,8 @@
 # COPY . /app
 
 FROM ruby:2.7.2
-RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
-RUN apt install -y node.js
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install -y nodejs
 
 COPY ./ /var/www/footomo
 
