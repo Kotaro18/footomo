@@ -6618,3 +6618,69 @@ Completed 500 Internal Server Error in 4585ms (ActiveRecord: 11.9ms | Allocation
 ActionView::Template::Error (link_directory argument must be a directory):
   
 app/assets/config/manifest.js:2
+Started GET "/users/sign_in" for 172.29.0.1 at 2021-05-17 00:15:45 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (12.1ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.6ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 578)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2822.6ms | Allocations: 213585)
+  Rendered layout layouts/application.html.erb (Duration: 3839.4ms | Allocations: 231588)
+Completed 500 Internal Server Error in 4057ms (ActiveRecord: 13.2ms | Allocations: 278788)
+
+
+  
+ActionView::Template::Error (Your ExecJS runtime therubyracer (V8) isn't supported by autoprefixer-rails,
+please switch to Node.js (V8) or mini_racer (V8)
+):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+  
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 172.30.0.1 at 2021-05-17 00:24:59 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (15.4ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (6.6ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 578)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2765.6ms | Allocations: 213593)
+  Rendered layout layouts/application.html.erb (Duration: 6814.2ms | Allocations: 299668)
+Completed 500 Internal Server Error in 7081ms (ActiveRecord: 10.6ms | Allocations: 346858)
+
+
+  
+ActionView::Template::Error (application.css):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+  
+app/views/layouts/application.html.erb:11

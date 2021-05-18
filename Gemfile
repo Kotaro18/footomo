@@ -73,7 +73,7 @@ gem 'semantic_range', '~> 3.0'
 
 gem 'sprockets'
 gem 'coffee-script', '~> 2.4', '>= 2.4.1'
-gem 'therubyracer'
+# gem 'therubyracer'
 gem 'sass', '~> 3.7', '>= 3.7.4'
 
 gem 'uglifier', '~> 4.2'
@@ -84,3 +84,9 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.16'
 gem 'bootstrap', '~> 5.0'
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
 gem 'rails-i18n', '~> 6.0'
+
+gem 'activerecord', '~> 6.1', '>= 6.1.3.2'
+gem 'activestorage', '~> 6.1', '>= 6.1.3.2'
+gem 'actionmailbox', '~> 6.1', '>= 6.1.3.2'
+# gem 'rails-flog', '~> 1.6', '>= 1.6.1'
+
