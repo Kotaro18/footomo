@@ -6684,3 +6684,41 @@ ActionView::Template::Error (application.css):
     14: 
   
 app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 172.30.0.1 at 2021-05-19 00:03:21 +0000
+Cannot render console from 172.30.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (25.5ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.7ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 577)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2945.0ms | Allocations: 213585)
+  Rendered layout layouts/application.html.erb (Duration: 4572.5ms | Allocations: 226530)
+Completed 500 Internal Server Error in 4924ms (ActiveRecord: 11.5ms | Allocations: 273719)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 1:1 of app/assets/stylesheets/layouts/application.scss
+>> @import '~bootstrap/scss/bootstrap';
+
+   ^
+):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_include_tag  'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+  
+app/assets/stylesheets/layouts/application.scss:1
+app/views/layouts/application.html.erb:11
