@@ -6722,3 +6722,233 @@ ActionView::Template::Error (Error: File to import not found or unreadable: ~boo
   
 app/assets/stylesheets/layouts/application.scss:1
 app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.0.1 at 2021-05-19 00:23:06 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (15.3ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.8ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 3.7ms | Allocations: 577)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2882.3ms | Allocations: 213598)
+  Rendered layout layouts/application.html.erb (Duration: 4838.1ms | Allocations: 230083)
+Completed 500 Internal Server Error in 5078ms (ActiveRecord: 11.0ms | Allocations: 277272)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: stylesheets/layouts/navbar.
+        on line 5:1 of app/assets/stylesheets/application.scss
+>> @import "stylesheets/layouts/navbar";
+
+   ^
+):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+  
+app/assets/stylesheets/application.scss:5
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.0.1 at 2021-05-19 23:16:29 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 46.6ms | Allocations: 947)
+  Rendered layout layouts/application.html.erb (Duration: 952.0ms | Allocations: 15578)
+Completed 500 Internal Server Error in 1013ms (Allocations: 18950)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: ./navbar.
+        on line 5:1 of app/assets/stylesheets/application.scss
+>> @import "./navbar";
+
+   ^
+):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+  
+app/assets/stylesheets/application.scss:5
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.0.1 at 2021-05-19 23:16:53 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 940)
+  Rendered layout layouts/application.html.erb (Duration: 6929.6ms | Allocations: 139581)
+Completed 500 Internal Server Error in 6950ms (Allocations: 142951)
+
+
+  
+ActionView::Template::Error (application.css):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+  
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.0.1 at 2021-05-19 23:19:25 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 940)
+  Rendered layout layouts/application.html.erb (Duration: 103.1ms | Allocations: 16766)
+Completed 500 Internal Server Error in 113ms (Allocations: 20123)
+
+
+  
+ActionView::Template::Error (application.css):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+  
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.0.1 at 2021-05-19 23:19:27 +0000
+Cannot render console from 192.168.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 940)
+  Rendered layout layouts/application.html.erb (Duration: 160.7ms | Allocations: 16657)
+Completed 500 Internal Server Error in 175ms (Allocations: 20027)
+
+
+  
+ActionView::Template::Error (application.css):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+  
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.16.1 at 2021-05-19 23:26:29 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (21.1ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.6ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 577)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3381.4ms | Allocations: 213588)
+  Rendered layout layouts/application.html.erb (Duration: 7810.6ms | Allocations: 273765)
+Completed 500 Internal Server Error in 8040ms (ActiveRecord: 10.9ms | Allocations: 320954)
+
+
+  
+ActionView::Template::Error (application.css):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+  
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.16.1 at 2021-05-19 23:36:47 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (14.8ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.8ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 577)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4057.7ms | Allocations: 213596)
+  Rendered layout layouts/application.html.erb (Duration: 8315.7ms | Allocations: 266934)
+Completed 500 Internal Server Error in 8569ms (ActiveRecord: 9.6ms | Allocations: 314122)
+
+
+  
+ActionView::Template::Error (application.css):
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1">
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+  
+app/views/layouts/application.html.erb:11
+Started GET "/users/sign_in" for 192.168.16.1 at 2021-05-19 23:44:00 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 947)
+  Rendered layout layouts/application.html.erb (Duration: 2407.0ms | Allocations: 132045)
+Completed 500 Internal Server Error in 2423ms (Allocations: 135417)
+
+
+  
+ActionView::Template::Error (application.js):
+     9:     <%# # initial-scaleでズーム倍率の初期値を設定する。initial-scale=1にすると拡大や縮小せずに見せる %>
+    10: 
+    11:     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => "reload" %>
+    12:     <%= javascript_include_tag "application", "data-turbolinks-track" => "reload" %>
+    13:   </head>
+    14: 
+    15:   <body>
+  
+app/views/layouts/application.html.erb:12
+Started GET "/users/sign_in" for 192.168.16.1 at 2021-05-19 23:47:45 +0000
+Cannot render console from 192.168.16.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 116)
+  Rendered /usr/local/bundle/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 940)
+  Rendered partial/_footer.html.erb (Duration: 3.8ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 744.9ms | Allocations: 47843)
+Completed 200 OK in 755ms (Views: 750.1ms | Allocations: 51251)
+
+
