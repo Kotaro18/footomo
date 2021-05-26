@@ -9,7 +9,9 @@
   }
   &__mainLogo {
     background-repeat: no-repeat;
-    background-image: url("~footomo_logo.png");
+    // background-image: url("~footomo_logo.png");
+    background-image: image-url("footomo_logo.png");
+    // background-size:  cover;
   }
   &-nav {
     & > li {
