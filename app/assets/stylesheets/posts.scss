@@ -22,7 +22,7 @@
 }
 
 .love {
-  background-image: url("~parts5");
+  background-image: image-url("parts5.png");
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
@@ -31,7 +31,7 @@
 
 .comment {
   margin-left: 8px;
-  background-image: url("~parts6");
+  background-image: image-url("parts6.png");
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
@@ -82,7 +82,7 @@
 }
 
 .delete-post-icon {
-  background-image: url("~parts9");
+  background-image: image-url("parts9.png");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -107,11 +107,16 @@
 }
 
 .delete-comment {
-  background-image: url("~parts8");
+  background-image: image-url("parts8.png");
   background-repeat: no-repeat;
   width: 11px;
   height: 11px;
   float: right;
   margin: 5px 0 0 10px;
   background-size: 11px !important;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 200px;
 }
