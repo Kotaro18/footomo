@@ -24865,3 +24865,6 @@ Cannot render console from 192.168.160.1! Allowed networks: 127.0.0.0/127.255.25
   
 ActionController::RoutingError (No route matches [GET] "/images/star.png"):
   
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.js-4086379459ee04a5d63b4b3891eabb38a580f545a60062f18d26c6bcc9755bfb.map"):
+  
