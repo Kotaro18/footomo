@@ -24868,3 +24868,210 @@ ActionController::RoutingError (No route matches [GET] "/images/star.png"):
   
 ActionController::RoutingError (No route matches [GET] "/assets/application.js-4086379459ee04a5d63b4b3891eabb38a580f545a60062f18d26c6bcc9755bfb.map"):
   
+Started GET "/" for ::1 at 2021-08-25 09:08:17 +0900
+  [1m[35m (5.1ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms | Allocations: 5258)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-08-25 09:08:19 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb___887986128243009696_23920 at /Users/kotaro18/Desktop/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 85.9ms | Allocations: 1448)
+Started GET "/users/sign_in" for 172.18.0.1 at 2021-09-02 00:08:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (28.9ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.3ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__748554541039604862_23840 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 156.4ms | Allocations: 1836)
+  Rendered partial/_carousel.html.erb (Duration: 4.2ms | Allocations: 131)
+  Rendered partial/_footer.html.erb (Duration: 7.8ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 13713.9ms | Allocations: 253376)
+Completed 200 OK in 14149ms (Views: 13902.9ms | ActiveRecord: 15.4ms | Allocations: 297751)
+
+
+Started GET "/images/star.png" for 172.18.0.1 at 2021-09-02 00:09:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/images/star.png"):
+  
+Started GET "/users/sign_in" for 172.18.0.1 at 2021-09-05 07:02:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__748554541039604862_23840 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 37.6ms | Allocations: 482)
+  Rendered partial/_carousel.html.erb (Duration: 0.2ms | Allocations: 6)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 8344.0ms | Allocations: 176240)
+Completed 200 OK in 8443ms (Views: 8357.0ms | Allocations: 176963)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-09-11 10:10:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (16.9ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (3.0ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__4466859887907362617_23860 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 109.9ms | Allocations: 1834)
+  Rendered partial/_carousel.html.erb (Duration: 4.4ms | Allocations: 126)
+  Rendered partial/_footer.html.erb (Duration: 4.7ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 5641.0ms | Allocations: 76421)
+Completed 200 OK in 5936ms (Views: 5769.3ms | ActiveRecord: 10.7ms | Allocations: 120780)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-09-11 10:16:20 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__4466859887907362617_23860 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 482)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 194.8ms | Allocations: 11116)
+Completed 200 OK in 216ms (Views: 213.9ms | Allocations: 11838)
+
+
+Started GET "/users/sign_in" for 172.19.0.1 at 2021-09-11 10:17:22 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+DEPRECATION WARNING: [Devise] `DeviseHelper#devise_error_messages!` is deprecated and will be
+removed in the next major version.
+
+Devise now uses a partial under "devise/shared/error_messages" to display
+error messages by default, and make them easier to customize. Update your
+views changing calls from:
+
+    <%= devise_error_messages! %>
+
+to:
+
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+To start customizing how errors are displayed, you can copy the partial
+from devise to your `app/views` folder. Alternatively, you can run
+`rails g devise:views` which will copy all of them again to your app.
+ (called from block in _app_views_devise_sessions_new_html_erb__4466859887907362617_23860 at /var/www/footomo/app/views/devise/sessions/new.html.erb:8)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.6ms | Allocations: 468)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 184.5ms | Allocations: 11132)
+Completed 200 OK in 202ms (Views: 198.7ms | Allocations: 11834)
+
+
