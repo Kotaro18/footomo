@@ -29728,3 +29728,2495 @@ ActionView::Template::Error (Missing partial users/_index with {:locale=>[:ja], 
     6:     <%= render 'posts/index', posts: @records %>
   
 app/views/searchs/search.html.erb:3
+Started GET "/posts/new" for 172.28.0.1 at 2021-11-08 23:21:50 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  [1m[35m (1.1ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[36mUser Load (7.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 33.7ms | Allocations: 576)
+  Rendered partial/_navbar.html.erb (Duration: 7.3ms | Allocations: 244)
+  Rendered partial/_carousel.html.erb (Duration: 8.4ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 9.5ms | Allocations: 404)
+  Rendered partial/_footer.html.erb (Duration: 8.4ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 487.7ms | Allocations: 13302)
+Completed 200 OK in 778ms (Views: 519.4ms | ActiveRecord: 19.5ms | Allocations: 29689)
+
+
+Started GET "/posts/..." for 172.28.0.1 at 2021-11-08 23:21:51 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/posts/..."):
+  
+Started GET "/search?content=Kotaro&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:22:01 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Kotaro"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1041)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 1105)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 1649)
+
+
+  
+ActionView::Template::Error (Missing partial users/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    1: <% if @model == 'user' %>
+    2:   <h3>【Usersモデルの検索結果】検索ワード：<%= @content %></h3>
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+  
+app/views/searchs/search.html.erb:3
+Started GET "/posts/new" for 172.28.0.1 at 2021-11-08 23:22:20 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (3.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 576)
+  Rendered partial/_navbar.html.erb (Duration: 2.2ms | Allocations: 244)
+  Rendered partial/_carousel.html.erb (Duration: 2.0ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 4.6ms | Allocations: 404)
+  Rendered partial/_footer.html.erb (Duration: 2.9ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 240.0ms | Allocations: 13301)
+Completed 200 OK in 291ms (Views: 261.6ms | ActiveRecord: 3.7ms | Allocations: 23300)
+
+
+Started GET "/posts/..." for 172.28.0.1 at 2021-11-08 23:22:21 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/posts/..."):
+  
+Started GET "/search?content=Kotaro&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:22:25 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Kotaro"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (3.4ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%Kotaro%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 61.9ms | Allocations: 6094)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 73.7ms | Allocations: 6448)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 1.2ms | Allocations: 86)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.5ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 438.2ms | Allocations: 25858)
+Completed 200 OK in 470ms (Views: 455.1ms | ActiveRecord: 6.2ms | Allocations: 27109)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:22:25 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=Blago&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:22:39 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (7.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%Blago%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 22.2ms | Allocations: 5916)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 25.3ms | Allocations: 5980)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.7ms | Allocations: 79)
+  Rendered partial/_carousel.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 1.5ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 246.8ms | Allocations: 25441)
+Completed 200 OK in 262ms (Views: 251.3ms | ActiveRecord: 10.0ms | Allocations: 26005)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:22:39 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=Blago&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:22:53 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1472)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 1536)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms | Allocations: 2073)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=Blago&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:23:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered posts/_index.html.erb (Duration: 7.0ms | Allocations: 2348)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 16.7ms | Allocations: 2705)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 2769)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 4214)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2:   <div class="col-md-8 col-md-2 mx-auto">
+    3:     <div class="card-wrap">
+    4:       <div class="card">
+  
+app/views/posts/_index.html.erb:1
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=Blago&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:23:25 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered posts/_index.html.erb (Duration: 2.4ms | Allocations: 1579)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1646)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 1710)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 2247)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2:   <div class="col-md-8 col-md-2 mx-auto">
+    3:     <div class="card-wrap">
+    4:       <div class="card">
+  
+app/views/posts/_index.html.erb:1
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=Blago&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:24:39 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered posts/_index.html.erb (Duration: 9.3ms | Allocations: 1822)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 20.9ms | Allocations: 2179)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 2244)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms | Allocations: 3689)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# <% @posts.each do |post| %> %>
+  <div class="col-md-8 col-md-2 mx-auto">
+    <div class="card-wrap">
+      <div class="card">
+        <div class="card-header align-items-center d-flex">
+          <%= link_to user_path(post.user), class: "no-text-decoration" do %>
+            <%= image_tag avatar_url(post.user), class: "post-profile-icon" %>
+          <% end %>
+          <%= link_to user_path(post.user), class: "black-color no-text-decoration",
+            title: post.user.name do %>
+            <strong><%= post.user.name %></strong>
+          <% end %>
+
+          <% if post.user_id == current_user.id %>
+            <%= link_to post_path(post), method: :delete, class: "ml-auto mx-0 my-auto" do %>
+              <div class="delete-post-icon">
+              </div>
+            <% end %>
+          <% end %>    
+
+        </div>
+        <%= link_to(post_path(post)) do %>
+          <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+        <%# .url(:medium)としてあげることで、mediumで指定したサイズにリサイズできる。 %>
+        <% end %>
+
+        <div class="card-body">
+          <div class="row parts">
+
+            <div id="like-icon-post-<%= post.id.to_s %>">
+              <% if post.liked_by(current_user).present? %>
+              <%# 投稿に、サインインしているユーザーのいいねが、あるかどうかを判断する。 %>
+                <%= link_to "いいねを取り消す", post_like_path(post.id, post.liked_by(current_user)), method: :DELETE, remote: true, class: "loved hide-text" %>
+              <% else %>
+                <%= link_to "いいね", post_likes_path(post), method: :post, remote: true, class: "love hide-text" %>
+              <% end %>
+            </div>
+            <%# <%= link_to "", "#", class: "love" %>
+            <%= link_to "", "#", class: "comment" %>
+          </div>
+          <div id="like-text-post-<%= post.id.to_s %>">
+            <%= render "like_text", { likes: post.likes } %>
+          </div>
+          <%# <div><strong>「いいね！」10件</strong></div> %>
+          <div>
+            <span><strong><%= post.user.name %></strong></span>
+            <span><%= post.caption %></span>
+            <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post), class: "post-time no-text-decoration" %>
+            
+            <div id="comment-post-<%= post.id.to_s %>">
+              <%= render 'comment_list', { post: post } %>
+            </div>
+            <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post),
+              class: "light-color post-time no-text-decoration" %>
+            <hr>
+            <div class="row actions" id="comment-form-post-<%= post.id.to_s %>">
+              <%= form_with model: [post, Comment.new], class: "w-100" do |f| %>
+                <%= f.hidden_field :user_id, value: current_user.id %>
+                <%= f.hidden_field :post_id, value: post.id %>
+                <%= f.text_field :comment, class: "form-control comment-input border-0", placeholder: "コメント ...", autocomplete: :off %>
+              <% end %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
+
+
+):
+1:    <%# <% @posts.each do |post| %> %>
+2:      <div class="col-md-8 col-md-2 mx-auto">
+3:        <div class="card-wrap">
+4:          <div class="card">
+5:            <div class="card-header align-items-center d-flex">
+6:              <%= link_to user_path(post.user), class: "no-text-decoration" do %>
+7:                <%= image_tag avatar_url(post.user), class: "post-profile-icon" %>
+8:              <% end %>
+9:              <%= link_to user_path(post.user), class: "black-color no-text-decoration",
+10:                title: post.user.name do %>
+11:                <strong><%= post.user.name %></strong>
+12:              <% end %>
+13:    
+14:              <% if post.user_id == current_user.id %>
+15:                <%= link_to post_path(post), method: :delete, class: "ml-auto mx-0 my-auto" do %>
+16:                  <div class="delete-post-icon">
+17:                  </div>
+18:                <% end %>
+19:              <% end %>    
+20:    
+21:            </div>
+22:            <%= link_to(post_path(post)) do %>
+23:              <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+24:            <%# .url(:medium)としてあげることで、mediumで指定したサイズにリサイズできる。 %>
+25:            <% end %>
+26:    
+27:            <div class="card-body">
+28:              <div class="row parts">
+29:    
+30:                <div id="like-icon-post-<%= post.id.to_s %>">
+31:                  <% if post.liked_by(current_user).present? %>
+32:                  <%# 投稿に、サインインしているユーザーのいいねが、あるかどうかを判断する。 %>
+33:                    <%= link_to "いいねを取り消す", post_like_path(post.id, post.liked_by(current_user)), method: :DELETE, remote: true, class: "loved hide-text" %>
+34:                  <% else %>
+35:                    <%= link_to "いいね", post_likes_path(post), method: :post, remote: true, class: "love hide-text" %>
+36:                  <% end %>
+37:                </div>
+38:                <%# <%= link_to "", "#", class: "love" %>
+39:                <%= link_to "", "#", class: "comment" %>
+40:              </div>
+41:              <div id="like-text-post-<%= post.id.to_s %>">
+42:                <%= render "like_text", { likes: post.likes } %>
+43:              </div>
+44:              <%# <div><strong>「いいね！」10件</strong></div> %>
+45:              <div>
+46:                <span><strong><%= post.user.name %></strong></span>
+47:                <span><%= post.caption %></span>
+48:                <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post), class: "post-time no-text-decoration" %>
+49:                
+50:                <div id="comment-post-<%= post.id.to_s %>">
+51:                  <%= render 'comment_list', { post: post } %>
+52:                </div>
+53:                <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post),
+54:                  class: "light-color post-time no-text-decoration" %>
+55:                <hr>
+56:                <div class="row actions" id="comment-form-post-<%= post.id.to_s %>">
+57:                  <%= form_with model: [post, Comment.new], class: "w-100" do |f| %>
+58:                    <%= f.hidden_field :user_id, value: current_user.id %>
+59:                    <%= f.hidden_field :post_id, value: post.id %>
+60:                    <%= f.text_field :comment, class: "form-control comment-input border-0", placeholder: "コメント ...", autocomplete: :off %>
+61:                  <% end %>
+62:                </div>
+63:    
+64:              </div>
+65:            </div>
+66:          </div>
+67:        </div>
+68:      </div>
+69:    <% end %>
+  
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/searchs/search.html.erb:6
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:24:51 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=Blago&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:24:54 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered posts/_index.html.erb (Duration: 6.2ms | Allocations: 1812)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1879)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 1944)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 2482)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# <% @posts.each do |post| %> %>
+  <div class="col-md-8 col-md-2 mx-auto">
+    <div class="card-wrap">
+      <div class="card">
+        <div class="card-header align-items-center d-flex">
+          <%= link_to user_path(post.user), class: "no-text-decoration" do %>
+            <%= image_tag avatar_url(post.user), class: "post-profile-icon" %>
+          <% end %>
+          <%= link_to user_path(post.user), class: "black-color no-text-decoration",
+            title: post.user.name do %>
+            <strong><%= post.user.name %></strong>
+          <% end %>
+
+          <% if post.user_id == current_user.id %>
+            <%= link_to post_path(post), method: :delete, class: "ml-auto mx-0 my-auto" do %>
+              <div class="delete-post-icon">
+              </div>
+            <% end %>
+          <% end %>    
+
+        </div>
+        <%= link_to(post_path(post)) do %>
+          <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+        <%# .url(:medium)としてあげることで、mediumで指定したサイズにリサイズできる。 %>
+        <% end %>
+
+        <div class="card-body">
+          <div class="row parts">
+
+            <div id="like-icon-post-<%= post.id.to_s %>">
+              <% if post.liked_by(current_user).present? %>
+              <%# 投稿に、サインインしているユーザーのいいねが、あるかどうかを判断する。 %>
+                <%= link_to "いいねを取り消す", post_like_path(post.id, post.liked_by(current_user)), method: :DELETE, remote: true, class: "loved hide-text" %>
+              <% else %>
+                <%= link_to "いいね", post_likes_path(post), method: :post, remote: true, class: "love hide-text" %>
+              <% end %>
+            </div>
+            <%# <%= link_to "", "#", class: "love" %>
+            <%= link_to "", "#", class: "comment" %>
+          </div>
+          <div id="like-text-post-<%= post.id.to_s %>">
+            <%= render "like_text", { likes: post.likes } %>
+          </div>
+          <%# <div><strong>「いいね！」10件</strong></div> %>
+          <div>
+            <span><strong><%= post.user.name %></strong></span>
+            <span><%= post.caption %></span>
+            <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post), class: "post-time no-text-decoration" %>
+            
+            <div id="comment-post-<%= post.id.to_s %>">
+              <%= render 'comment_list', { post: post } %>
+            </div>
+            <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post),
+              class: "light-color post-time no-text-decoration" %>
+            <hr>
+            <div class="row actions" id="comment-form-post-<%= post.id.to_s %>">
+              <%= form_with model: [post, Comment.new], class: "w-100" do |f| %>
+                <%= f.hidden_field :user_id, value: current_user.id %>
+                <%= f.hidden_field :post_id, value: post.id %>
+                <%= f.text_field :comment, class: "form-control comment-input border-0", placeholder: "コメント ...", autocomplete: :off %>
+              <% end %>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+
+
+
+
+):
+1:    <%# <% @posts.each do |post| %> %>
+2:      <div class="col-md-8 col-md-2 mx-auto">
+3:        <div class="card-wrap">
+4:          <div class="card">
+5:            <div class="card-header align-items-center d-flex">
+6:              <%= link_to user_path(post.user), class: "no-text-decoration" do %>
+7:                <%= image_tag avatar_url(post.user), class: "post-profile-icon" %>
+8:              <% end %>
+9:              <%= link_to user_path(post.user), class: "black-color no-text-decoration",
+10:                title: post.user.name do %>
+11:                <strong><%= post.user.name %></strong>
+12:              <% end %>
+13:    
+14:              <% if post.user_id == current_user.id %>
+15:                <%= link_to post_path(post), method: :delete, class: "ml-auto mx-0 my-auto" do %>
+16:                  <div class="delete-post-icon">
+17:                  </div>
+18:                <% end %>
+19:              <% end %>    
+20:    
+21:            </div>
+22:            <%= link_to(post_path(post)) do %>
+23:              <%= image_tag post.photos.first.image.url(:medium), class: "card-img-top" %>
+24:            <%# .url(:medium)としてあげることで、mediumで指定したサイズにリサイズできる。 %>
+25:            <% end %>
+26:    
+27:            <div class="card-body">
+28:              <div class="row parts">
+29:    
+30:                <div id="like-icon-post-<%= post.id.to_s %>">
+31:                  <% if post.liked_by(current_user).present? %>
+32:                  <%# 投稿に、サインインしているユーザーのいいねが、あるかどうかを判断する。 %>
+33:                    <%= link_to "いいねを取り消す", post_like_path(post.id, post.liked_by(current_user)), method: :DELETE, remote: true, class: "loved hide-text" %>
+34:                  <% else %>
+35:                    <%= link_to "いいね", post_likes_path(post), method: :post, remote: true, class: "love hide-text" %>
+36:                  <% end %>
+37:                </div>
+38:                <%# <%= link_to "", "#", class: "love" %>
+39:                <%= link_to "", "#", class: "comment" %>
+40:              </div>
+41:              <div id="like-text-post-<%= post.id.to_s %>">
+42:                <%= render "like_text", { likes: post.likes } %>
+43:              </div>
+44:              <%# <div><strong>「いいね！」10件</strong></div> %>
+45:              <div>
+46:                <span><strong><%= post.user.name %></strong></span>
+47:                <span><%= post.caption %></span>
+48:                <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post), class: "post-time no-text-decoration" %>
+49:                
+50:                <div id="comment-post-<%= post.id.to_s %>">
+51:                  <%= render 'comment_list', { post: post } %>
+52:                </div>
+53:                <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post),
+54:                  class: "light-color post-time no-text-decoration" %>
+55:                <hr>
+56:                <div class="row actions" id="comment-form-post-<%= post.id.to_s %>">
+57:                  <%= form_with model: [post, Comment.new], class: "w-100" do |f| %>
+58:                    <%= f.hidden_field :user_id, value: current_user.id %>
+59:                    <%= f.hidden_field :post_id, value: post.id %>
+60:                    <%= f.text_field :comment, class: "form-control comment-input border-0", placeholder: "コメント ...", autocomplete: :off %>
+61:                  <% end %>
+62:                </div>
+63:    
+64:              </div>
+65:            </div>
+66:          </div>
+67:        </div>
+68:      </div>
+69:    <% end %>
+  
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/posts/_index.html.erb:75: syntax error, unexpected `end', expecting end-of-input
+app/views/searchs/search.html.erb:6
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:25:01 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=Blago&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:28:34 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (4.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%Blago%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 23.8ms | Allocations: 6058)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 34.8ms | Allocations: 6245)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 4.3ms | Allocations: 250)
+  Rendered partial/_carousel.html.erb (Duration: 1.8ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 5.0ms | Allocations: 405)
+  Rendered partial/_footer.html.erb (Duration: 1.6ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 268.6ms | Allocations: 27173)
+Completed 200 OK in 278ms (Views: 269.4ms | ActiveRecord: 7.5ms | Allocations: 27738)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:28:34 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/users/1" for 172.28.0.1 at 2021-11-08 23:28:36 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (8.5ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  Rendered users/show.html.erb within layouts/application (Duration: 28.4ms | Allocations: 8487)
+  Rendered partial/_navbar.html.erb (Duration: 0.7ms | Allocations: 79)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.7ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 213.5ms | Allocations: 19679)
+Completed 200 OK in 250ms (Views: 218.9ms | ActiveRecord: 10.6ms | Allocations: 26435)
+
+
+Started GET "/users/..." for 172.28.0.1 at 2021-11-08 23:28:37 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/users/..."):
+  
+Started GET "/search?content=Blago&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:28:42 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (4.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%Blago%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 17.9ms | Allocations: 5916)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 21.5ms | Allocations: 5980)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.9ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 217.9ms | Allocations: 25482)
+Completed 200 OK in 228ms (Views: 220.9ms | ActiveRecord: 6.3ms | Allocations: 26049)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:28:43 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/users/1" for 172.28.0.1 at 2021-11-08 23:28:48 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (10.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:10
+  Rendered users/show.html.erb within layouts/application (Duration: 39.5ms | Allocations: 8222)
+  Rendered partial/_navbar.html.erb (Duration: 1.4ms | Allocations: 76)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.4ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 237.7ms | Allocations: 19597)
+Completed 200 OK in 270ms (Views: 234.3ms | ActiveRecord: 15.0ms | Allocations: 25650)
+
+
+Started GET "/users/..." for 172.28.0.1 at 2021-11-08 23:28:49 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/users/..."):
+  
+Started GET "/search?content=Blago&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:29:26 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (4.6ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%Blago%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 24.7ms | Allocations: 5916)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 32.3ms | Allocations: 5980)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 1.2ms | Allocations: 79)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.8ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 244.7ms | Allocations: 25469)
+Completed 200 OK in 257ms (Views: 248.1ms | ActiveRecord: 7.0ms | Allocations: 26037)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:29:27 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/users/..." for 172.28.0.1 at 2021-11-08 23:30:03 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/users/..."):
+  
+Started GET "/search?content=Blago&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-08 23:35:13 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  [1m[35m (0.2ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  ↳ app/controllers/searchs_controller.rb:15:in `search_for'
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (7.2ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%Blago%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 22.0ms | Allocations: 5914)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 27.8ms | Allocations: 5978)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.7ms | Allocations: 79)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.8ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 231.3ms | Allocations: 25495)
+Completed 200 OK in 271ms (Views: 231.2ms | ActiveRecord: 18.0ms | Allocations: 32312)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-08 23:35:13 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=Blago&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:34:13 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"Blago"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  [1m[35m (0.9ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  ↳ app/controllers/searchs_controller.rb:15:in `search_for'
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (3.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%Blago%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 141.6ms | Allocations: 5915)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 161.4ms | Allocations: 5979)
+  [1m[36mUser Load (3.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 3.3ms | Allocations: 79)
+  Rendered partial/_carousel.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 3.6ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 895.4ms | Allocations: 25499)
+Completed 200 OK in 1099ms (Views: 903.0ms | ActiveRecord: 19.7ms | Allocations: 32316)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:34:15 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:34:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (3.5ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 25.6ms | Allocations: 5836)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 28.5ms | Allocations: 5900)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 1.0ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 246.8ms | Allocations: 25383)
+Completed 200 OK in 256ms (Views: 248.1ms | ActiveRecord: 6.3ms | Allocations: 25957)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:34:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 172.28.0.1 at 2021-11-10 08:35:52 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 34ms (ActiveRecord: 3.4ms | Allocations: 11209)
+
+
+  
+ActionController::MissingExactTemplate (PostsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:35:52 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:35:59 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:35:59 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (3.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 55.5ms | Allocations: 7989)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 59.2ms | Allocations: 8053)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.5ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.3ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 402.5ms | Allocations: 33382)
+Completed 200 OK in 411ms (Views: 402.6ms | ActiveRecord: 7.1ms | Allocations: 34101)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:36:00 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:36:15 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (6.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 29.1ms | Allocations: 5983)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 51.6ms | Allocations: 6337)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 2.4ms | Allocations: 243)
+  Rendered partial/_carousel.html.erb (Duration: 3.4ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 6.0ms | Allocations: 405)
+  Rendered partial/_footer.html.erb (Duration: 2.3ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 427.4ms | Allocations: 27059)
+Completed 200 OK in 456ms (Views: 436.1ms | ActiveRecord: 8.8ms | Allocations: 28525)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:36:16 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 172.28.0.1 at 2021-11-10 08:36:17 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (10.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 45ms (ActiveRecord: 10.7ms | Allocations: 11217)
+
+
+  
+ActionController::MissingExactTemplate (PostsController#index is missing a template for request formats: text/html):
+  
+actionpack (6.1.3.2) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.1.3.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:228:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.1.3.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:117:in `block in run_callbacks'
+actiontext (6.1.3.2) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (6.1.3.2) lib/action_text/engine.rb:55:in `block (4 levels) in <class:Engine>'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:126:in `instance_exec'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:126:in `block in run_callbacks'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.2) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.2) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.2) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.2) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (4.3.8) lib/puma/configuration.rb:228:in `call'
+puma (4.3.8) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.8) lib/puma/server.rb:472:in `process_client'
+puma (4.3.8) lib/puma/server.rb:328:in `block in run'
+puma (4.3.8) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:36:17 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:36:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:36:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (6.0ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 28.3ms | Allocations: 7814)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 40.8ms | Allocations: 7970)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.3ms | Allocations: 77)
+  Rendered partial/_carousel.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 2.3ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 256.6ms | Allocations: 27563)
+Completed 200 OK in 294ms (Views: 283.0ms | ActiveRecord: 8.2ms | Allocations: 33995)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:36:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:38:58 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (5.4ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 23.8ms | Allocations: 5980)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 30.6ms | Allocations: 6334)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 2.6ms | Allocations: 248)
+  Rendered partial/_carousel.html.erb (Duration: 2.4ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 9.3ms | Allocations: 405)
+  Rendered partial/_footer.html.erb (Duration: 3.6ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 10493.3ms | Allocations: 223823)
+Completed 200 OK in 10511ms (Views: 10499.6ms | ActiveRecord: 7.5ms | Allocations: 225285)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:39:09 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 172.28.0.1 at 2021-11-10 08:39:12 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (7.9ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	ORDER BY
+		created_at DESC LIMIT ?[0m  [["LIMIT", 10]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mPhoto Load (5.9ms)[0m  [1m[34m
+	SELECT
+		"photos" . *
+	FROM
+		"photos"
+	WHERE
+		"photos"."post_id" IN (
+			?
+			,?
+		)[0m  [[nil, 2], [nil, 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mUser Load (3.3ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mLike Load (63.8ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mCACHE Like Load (0.2ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = ? AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (5.8ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 2]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  [1m[36mUser Load (3.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_like_text.html.erb:4
+  Rendered posts/_like_text.html.erb (Duration: 81.9ms | Allocations: 13764)
+  [1m[36mComment Load (6.2ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  Rendered posts/_comment_list.html.erb (Duration: 74.8ms | Allocations: 7798)
+  [1m[36mLike Load (4.0ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (4.0ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 24.9ms | Allocations: 7683)
+  [1m[36mComment Load (4.0ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 15.5ms | Allocations: 5206)
+  Rendered posts/index.html.erb within layouts/application (Duration: 476.0ms | Allocations: 70929)
+  Rendered partial/_navbar.html.erb (Duration: 0.9ms | Allocations: 77)
+  Rendered partial/_carousel.html.erb (Duration: 0.4ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.7ms | Allocations: 201)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 688.6ms | Allocations: 82307)
+Completed 200 OK in 723ms (Views: 591.2ms | ActiveRecord: 112.0ms | Allocations: 91907)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:39:13 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:39:37 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1466)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 1530)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2057)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/" for 172.28.0.1 at 2021-11-10 08:39:43 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.9ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	ORDER BY
+		created_at DESC LIMIT ?[0m  [["LIMIT", 10]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mPhoto Load (2.5ms)[0m  [1m[34m
+	SELECT
+		"photos" . *
+	FROM
+		"photos"
+	WHERE
+		"photos"."post_id" IN (
+			?
+			,?
+		)[0m  [[nil, 2], [nil, 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mUser Load (4.6ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mLike Load (6.7ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mCACHE Like Load (0.0ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = ? AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (2.6ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 2]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  [1m[36mUser Load (2.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_like_text.html.erb:4
+  Rendered posts/_like_text.html.erb (Duration: 72.5ms | Allocations: 13439)
+  [1m[36mComment Load (4.8ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  Rendered posts/_comment_list.html.erb (Duration: 99.4ms | Allocations: 7584)
+  [1m[36mLike Load (6.5ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (7.3ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 33.9ms | Allocations: 7683)
+  [1m[36mComment Load (3.2ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 35.0ms | Allocations: 5206)
+  Rendered posts/index.html.erb within layouts/application (Duration: 500.2ms | Allocations: 69309)
+  Rendered partial/_navbar.html.erb (Duration: 0.3ms | Allocations: 75)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.9ms | Allocations: 199)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 766.3ms | Allocations: 80683)
+Completed 200 OK in 802ms (Views: 729.5ms | ActiveRecord: 47.8ms | Allocations: 89596)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:39:44 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:40:32 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1106)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1650)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:45:07 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/" for 172.28.0.1 at 2021-11-10 08:45:09 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (7.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	ORDER BY
+		created_at DESC LIMIT ?[0m  [["LIMIT", 10]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mPhoto Load (4.0ms)[0m  [1m[34m
+	SELECT
+		"photos" . *
+	FROM
+		"photos"
+	WHERE
+		"photos"."post_id" IN (
+			?
+			,?
+		)[0m  [[nil, 2], [nil, 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mUser Load (3.5ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mLike Load (3.0ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mCACHE Like Load (0.0ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = ? AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (2.5ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 2]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  [1m[36mUser Load (4.3ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_like_text.html.erb:4
+  Rendered posts/_like_text.html.erb (Duration: 50.5ms | Allocations: 13723)
+  [1m[36mComment Load (5.9ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  Rendered posts/_comment_list.html.erb (Duration: 70.5ms | Allocations: 7780)
+  [1m[36mLike Load (6.3ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (4.1ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 25.2ms | Allocations: 7683)
+  [1m[36mComment Load (3.1ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 21.5ms | Allocations: 5206)
+  Rendered posts/index.html.erb within layouts/application (Duration: 328.2ms | Allocations: 70823)
+  Rendered partial/_navbar.html.erb (Duration: 2.7ms | Allocations: 243)
+  Rendered partial/_carousel.html.erb (Duration: 4.2ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 4.7ms | Allocations: 404)
+  Rendered partial/_footer.html.erb (Duration: 4.3ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 538.4ms | Allocations: 83625)
+Completed 200 OK in 584ms (Views: 509.5ms | ActiveRecord: 46.8ms | Allocations: 93465)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:45:10 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:45:16 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1639)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 1703)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 2919)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_show with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/show', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/" for 172.28.0.1 at 2021-11-10 08:45:19 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (6.9ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (7.1ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	ORDER BY
+		created_at DESC LIMIT ?[0m  [["LIMIT", 10]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mPhoto Load (7.5ms)[0m  [1m[34m
+	SELECT
+		"photos" . *
+	FROM
+		"photos"
+	WHERE
+		"photos"."post_id" IN (
+			?
+			,?
+		)[0m  [[nil, 2], [nil, 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mUser Load (3.6ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mLike Load (2.6ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mCACHE Like Load (0.0ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = ? AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (3.5ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 2]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  [1m[36mUser Load (3.4ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_like_text.html.erb:4
+  Rendered posts/_like_text.html.erb (Duration: 41.6ms | Allocations: 13438)
+  [1m[36mComment Load (3.8ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  Rendered posts/_comment_list.html.erb (Duration: 62.6ms | Allocations: 7585)
+  [1m[36mLike Load (2.0ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (2.7ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 18.4ms | Allocations: 7683)
+  [1m[36mComment Load (2.9ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 14.7ms | Allocations: 5206)
+  Rendered posts/index.html.erb within layouts/application (Duration: 305.3ms | Allocations: 69324)
+  Rendered partial/_navbar.html.erb (Duration: 0.6ms | Allocations: 77)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.4ms | Allocations: 201)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 501.1ms | Allocations: 80702)
+Completed 200 OK in 540ms (Views: 469.9ms | ActiveRecord: 46.0ms | Allocations: 89627)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:45:20 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:45:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (2.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 27.3ms | Allocations: 5983)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 35.0ms | Allocations: 6170)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.4ms | Allocations: 77)
+  Rendered partial/_carousel.html.erb (Duration: 0.4ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.5ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.3ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 259.2ms | Allocations: 25662)
+Completed 200 OK in 272ms (Views: 265.4ms | ActiveRecord: 4.5ms | Allocations: 26250)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:45:22 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:47:34 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1642)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 1706)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms | Allocations: 3144)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-10 08:47:38 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 27.9ms | Allocations: 5986)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 32.6ms | Allocations: 6173)
+  [1m[36mUser Load (6.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 7.5ms | Allocations: 243)
+  Rendered partial/_carousel.html.erb (Duration: 2.7ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 2.1ms | Allocations: 405)
+  Rendered partial/_footer.html.erb (Duration: 7.3ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 316.0ms | Allocations: 27086)
+Completed 200 OK in 324ms (Views: 314.1ms | ActiveRecord: 8.6ms | Allocations: 27646)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-10 08:47:39 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-14 23:26:04 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  [1m[35m (0.4ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  ↳ app/controllers/searchs_controller.rb:15:in `search_for'
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (12.6ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 51.7ms | Allocations: 5839)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 58.5ms | Allocations: 5903)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 1.0ms | Allocations: 77)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 1.6ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 380.7ms | Allocations: 25441)
+Completed 200 OK in 506ms (Views: 379.7ms | ActiveRecord: 23.1ms | Allocations: 32267)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-14 23:26:05 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-14 23:26:10 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 29.0ms | Allocations: 5833)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 31.0ms | Allocations: 5897)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 0.4ms | Allocations: 75)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.4ms | Allocations: 200)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 232.8ms | Allocations: 25384)
+Completed 200 OK in 243ms (Views: 234.9ms | ActiveRecord: 6.1ms | Allocations: 25955)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-14 23:26:11 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-14 23:26:18 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1042)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 1106)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 1638)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-14 23:28:08 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mPost Load (35.1ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	WHERE
+		(
+			title LIKE '%a%'
+		)[0m
+  ↳ app/views/posts/_index2.html.erb:13
+  Rendered posts/_index2.html.erb (Duration: 59.5ms | Allocations: 7783)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 74.4ms | Allocations: 8145)
+  Rendered layout layouts/application.html.erb (Duration: 80.8ms | Allocations: 8209)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 35.1ms | Allocations: 9652)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: title):
+    10:         </tr>
+    11:     </thead>
+    12:     <tbody id="post">
+    13:     <% posts.each do |post| %>
+    14:       <tr>
+    15:         <td><%= post.user.name %></td>
+    16:         <td><%= post.title %></td>
+  
+app/views/posts/_index2.html.erb:13
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-14 23:32:28 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 18.8ms | Allocations: 1639)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 1703)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms | Allocations: 3143)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-14 23:33:29 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mPost Load (5.8ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	WHERE
+		(
+			title LIKE '%a%'
+		)[0m
+  ↳ app/views/posts/_index2.html.erb:13
+  Rendered posts/_index2.html.erb (Duration: 30.8ms | Allocations: 7768)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 44.7ms | Allocations: 8125)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 8189)
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 5.8ms | Allocations: 9632)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: title):
+    10:         </tr>
+    11:     </thead>
+    12:     <tbody id="post">
+    13:     <% posts.each do |post| %>
+    14:       <tr>
+    15:         <td><%= post.user.name %></td>
+    16:         <td><%= post.title %></td>
+  
+app/views/posts/_index2.html.erb:13
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-21 03:08:32 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  [1m[35m (0.4ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  ↳ app/controllers/searchs_controller.rb:21:in `search_for'
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered searchs/search.html.erb within layouts/application (Duration: 22.9ms | Allocations: 1644)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 1708)
+Completed 500 Internal Server Error in 395ms (ActiveRecord: 21.6ms | Allocations: 9400)
+
+
+  
+ActionView::Template::Error (Missing partial posts/_index with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    3:   <%= render 'users/index', users: @records %>
+    4: <% else @model == 'posts' %>
+    5:   <h3>【Postsモデルの検索結果】検索ワード：<%= @content %></h3>
+    6:     <%= render 'posts/index', posts: @records %>
+    7: <% end %>
+  
+app/views/searchs/search.html.erb:6
+Started GET "/search?content=a&model=user&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-24 11:42:24 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"user"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  [1m[35m (0.8ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  ↳ app/controllers/searchs_controller.rb:15:in `search_for'
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mUser Load (2.9ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		(
+			name LIKE '%a%'
+		)[0m
+  ↳ app/views/users/_index.html.erb:1
+  Rendered users/_index.html.erb (Duration: 76.6ms | Allocations: 5998)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 105.9ms | Allocations: 6352)
+  [1m[36mUser Load (3.1ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 5.5ms | Allocations: 243)
+  Rendered partial/_carousel.html.erb (Duration: 3.9ms | Allocations: 91)
+  Rendered searchs/_form.html.erb (Duration: 5.4ms | Allocations: 405)
+  Rendered partial/_footer.html.erb (Duration: 2.0ms | Allocations: 80)
+  Rendered layout layouts/application.html.erb (Duration: 602.6ms | Allocations: 27293)
+Completed 200 OK in 773ms (Views: 629.5ms | ActiveRecord: 17.3ms | Allocations: 35021)
+
+
+Started GET "/..." for 172.28.0.1 at 2021-11-24 11:42:27 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.28.0.1 at 2021-11-24 11:42:35 +0000
+Cannot render console from 172.28.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  Rendered posts/_index.html.erb (Duration: 32.0ms | Allocations: 2345)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 46.7ms | Allocations: 2535)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 2599)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.0ms | Allocations: 3140)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2:   <div class="col-md-8 col-md-2 mx-auto">
+    3:     <div class="card-wrap">
+    4:       <div class="card">
+  
+app/views/posts/_index.html.erb:1
+app/views/searchs/search.html.erb:6
