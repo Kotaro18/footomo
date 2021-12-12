@@ -33720,3 +33720,496 @@ ActionView::Template::Error (undefined method `each' for nil:NilClass):
   
 app/views/posts/_index.html.erb:1
 app/views/searchs/search.html.erb:6
+  [1m[35m (10.7ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Migrating to AddTitleToPosts (20211212045017)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36m
+	BEGIN TRANSACTION[0m
+  [1m[35m (1.2ms)[0m  [1m[35m
+	ALTER TABLE
+	"posts" ADD "title" VARCHAR[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32m
+	INSERT
+	INTO
+		"schema_migrations" ("version")
+	VALUES (?)[0m  [["version", "20211212045017"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36m
+	COMMIT TRANSACTION[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34m
+	SELECT
+		"ar_internal_metadata" . *
+	FROM
+		"ar_internal_metadata"
+	WHERE
+		"ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.19.0.1 at 2021-12-12 05:09:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (20.6ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[35m (4.1ms)[0m  [1m[34m
+	SELECT
+		"schema_migrations"."version"
+	FROM
+		"schema_migrations"
+	ORDER BY
+		"schema_migrations"."version" ASC[0m
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"a"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mPost Load (15.6ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	WHERE
+		(
+			title LIKE '%a%'
+		)[0m
+  ↳ app/views/posts/_index.html.erb:1
+  Rendered posts/_index.html.erb (Duration: 39.2ms | Allocations: 6670)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 69.4ms | Allocations: 7255)
+  [1m[36mUser Load (4.0ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:18
+  Rendered partial/_navbar.html.erb (Duration: 3.7ms | Allocations: 274)
+  Rendered partial/_carousel.html.erb (Duration: 4.1ms | Allocations: 93)
+  Rendered searchs/_form.html.erb (Duration: 3.7ms | Allocations: 435)
+  Rendered partial/_footer.html.erb (Duration: 3.0ms | Allocations: 82)
+  Rendered layout layouts/application.html.erb (Duration: 4569.7ms | Allocations: 105195)
+Completed 200 OK in 4790ms (Views: 4593.4ms | ActiveRecord: 30.1ms | Allocations: 112739)
+
+
+Started GET "/..." for 172.19.0.1 at 2021-12-12 05:10:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=a&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.19.0.1 at 2021-12-12 05:10:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/var/www/footomo/app/controllers/searchs_controller.rb:19: syntax error, unexpected ':'
+        Post.where(user.name: content)
+                            ^
+):
+  
+app/controllers/searchs_controller.rb:19: syntax error, unexpected ':'
+app/controllers/searchs_controller.rb:19: syntax error, unexpected ':'
+app/controllers/searchs_controller.rb:19: syntax error, unexpected ':'
+Started GET "/posts/new" for 172.19.0.1 at 2021-12-12 05:17:47 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#new as HTML
+  [1m[35m (0.3ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  [1m[36mUser Load (2.6ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 29.0ms | Allocations: 779)
+  Rendered partial/_navbar.html.erb (Duration: 0.6ms | Allocations: 82)
+  Rendered partial/_carousel.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 0.6ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 297.3ms | Allocations: 12291)
+Completed 200 OK in 889ms (Views: 304.5ms | ActiveRecord: 50.0ms | Allocations: 160489)
+
+
+Started GET "/posts/..." for 172.19.0.1 at 2021-12-12 05:17:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/posts/..."):
+  
+Started POST "/posts" for 172.19.0.1 at 2021-12-12 05:18:25 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#create as HTML
+  Parameters: 
+{
+    "authenticity_token"[0;37m => [0m[0;33m"tDHjE42b+Lscmpe0ne4iUDGkoplkMVdj7t2za+2GlGwCav9YkXdnBA77wtysxBm4oRi81Vo3pF1l1e3PR674/Q=="[0m,
+                  "post"[0;37m => [0m{
+                  "caption"[0;37m => [0m[0;33m"サンプル"[0m,
+        "photos_attributes"[0;37m => [0m{
+            "0"[0;37m => [0m{
+                "image"[0;37m => [0m#<ActionDispatch::Http::UploadedFile:0x00007f36acc58368 @tempfile=#<Tempfile:/tmp/RackMultipart20211212-1-1l2bq4s.png>, @original_filename="star.png Network.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"post[photos_attributes][0][image]\"; filename=\"star.png Network.png\"\r\nContent-Type: image/png\r\n">
+            }
+        }
+    },
+                "commit"[0;37m => [0m[0;33m"投稿する"[0m
+}
+  [1m[36mUser Load (6.7ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /var/www/footomo/app/controllers/posts_controller.rb:17)
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /var/www/footomo/app/controllers/posts_controller.rb:17)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36m
+	BEGIN TRANSACTION[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mUser Load (8.5ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mPost Create (27.6ms)[0m  [1m[32m
+	INSERT
+	INTO
+		"posts" (
+			"caption"
+			,"user_id"
+			,"created_at"
+			,"updated_at"
+		)
+	VALUES (
+		?
+		,?
+		,?
+		,?
+	)[0m  [["caption", "サンプル"], ["user_id", 1], ["created_at", "2021-12-12 05:18:26.522208"], ["updated_at", "2021-12-12 05:18:26.522208"]]
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mPhoto Create (9.2ms)[0m  [1m[32m
+	INSERT
+	INTO
+		"photos" (
+			"image"
+			,"post_id"
+			,"created_at"
+			,"updated_at"
+		)
+	VALUES (
+		?
+		,?
+		,?
+		,?
+	)[0m  [["image", "star.png_Network.png"], ["post_id", 5], ["created_at", "2021-12-12 05:18:26.569578"], ["updated_at", "2021-12-12 05:18:26.569578"]]
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[36m
+	COMMIT TRANSACTION[0m
+  ↳ app/controllers/posts_controller.rb:19:in `create'
+Redirected to http://localhost/
+Completed 302 Found in 836ms (ActiveRecord: 65.5ms | Allocations: 43012)
+
+
+Started GET "/" for 172.19.0.1 at 2021-12-12 05:18:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PostsController#index as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.8ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	ORDER BY
+		created_at DESC LIMIT ?[0m  [["LIMIT", 10]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mPhoto Load (3.0ms)[0m  [1m[34m
+	SELECT
+		"photos" . *
+	FROM
+		"photos"
+	WHERE
+		"photos"."post_id" IN (
+			?
+			,?
+			,?
+			,?
+		)[0m  [[nil, 5], [nil, 3], [nil, 2], [nil, 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mUser Load (3.5ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?[0m  [["id", 1]]
+  ↳ app/views/posts/index.html.erb:1
+  [1m[36mLike Load (4.8ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 5], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (4.5ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 5]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 23.8ms | Allocations: 8006)
+  [1m[36mComment Load (3.9ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 40.7ms | Allocations: 24192)
+  [1m[36mLike Load (2.3ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 3], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (3.3ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 3]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 22.8ms | Allocations: 7686)
+  [1m[36mComment Load (3.2ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 3]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 13.7ms | Allocations: 5206)
+  [1m[36mLike Load (2.9ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mCACHE Like Load (0.0ms)[0m  [1m[34mSELECT "likes".* FROM "likes" WHERE "likes"."user_id" = ? AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 2], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (2.0ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 2]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  [1m[36mUser Load (2.8ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_like_text.html.erb:4
+  Rendered posts/_like_text.html.erb (Duration: 32.5ms | Allocations: 14158)
+  [1m[36mComment Load (4.2ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 2]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:3
+  Rendered posts/_comment_list.html.erb (Duration: 44.6ms | Allocations: 8907)
+  [1m[36mLike Load (3.6ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 1], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  [1m[36mLike Load (2.6ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."post_id" = ?
+	ORDER BY
+		"likes"."created_at" DESC[0m  [["post_id", 1]]
+  ↳ app/views/posts/_like_text.html.erb:2
+  Rendered posts/_like_text.html.erb (Duration: 14.7ms | Allocations: 7686)
+  [1m[36mComment Load (3.2ms)[0m  [1m[34m
+	SELECT
+		"comments" . *
+	FROM
+		"comments"
+	WHERE
+		"comments"."post_id" = ?[0m  [["post_id", 1]]
+  ↳ app/views/posts/_comment_list.html.erb:1
+  Rendered posts/_comment_list.html.erb (Duration: 17.5ms | Allocations: 5206)
+  Rendered posts/index.html.erb within layouts/application (Duration: 3703.4ms | Allocations: 403362)
+  Rendered partial/_navbar.html.erb (Duration: 0.3ms | Allocations: 77)
+  Rendered partial/_carousel.html.erb (Duration: 0.2ms | Allocations: 5)
+  Rendered searchs/_form.html.erb (Duration: 2.4ms | Allocations: 202)
+  Rendered partial/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 3903.2ms | Allocations: 414873)
+Completed 200 OK in 3927ms (Views: 3827.6ms | ActiveRecord: 85.4ms | Allocations: 423940)
+
+
+Started GET "/..." for 172.19.0.1 at 2021-12-12 05:18:30 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+Started GET "/search?content=%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB&model=post&method=partial&commit=%E6%A4%9C%E7%B4%A2" for 172.19.0.1 at 2021-12-12 05:19:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SearchsController#search as HTML
+  Parameters: 
+{
+    "content"[0;37m => [0m[0;33m"サンプル"[0m,
+      "model"[0;37m => [0m[0;33m"post"[0m,
+     "method"[0;37m => [0m[0;33m"partial"[0m,
+     "commit"[0;37m => [0m[0;33m"検索"[0m
+}
+  [1m[35m (0.2ms)[0m  [1m[34m
+	SELECT
+		sqlite_version (*)[0m
+  ↳ app/controllers/searchs_controller.rb:21:in `search_for'
+  Rendering layout layouts/application.html.erb
+  Rendering searchs/search.html.erb within layouts/application
+  [1m[36mPost Load (3.4ms)[0m  [1m[34m
+	SELECT
+		"posts" . *
+	FROM
+		"posts"
+	WHERE
+		(
+			caption LIKE '%サンプル%'
+		)[0m
+  ↳ app/views/posts/_index.html.erb:1
+  [1m[36mUser Load (4.9ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_index.html.erb:6
+  [1m[36mUser Load (3.3ms)[0m  [1m[34m
+	SELECT
+		"users" . *
+	FROM
+		"users"
+	WHERE
+		"users"."id" = ?
+	ORDER BY
+		"users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/_index.html.erb:14
+  [1m[36mPhoto Load (6.0ms)[0m  [1m[34m
+	SELECT
+		"photos" . *
+	FROM
+		"photos"
+	WHERE
+		"photos"."post_id" = ?
+	ORDER BY
+		"photos"."id" ASC LIMIT ?[0m  [["post_id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/_index.html.erb:23
+  [1m[36mLike Load (2.6ms)[0m  [1m[34m
+	SELECT
+		"likes" . *
+	FROM
+		"likes"
+	WHERE
+		"likes"."user_id" = ?
+		AND "likes"."post_id" = ? LIMIT ?[0m  [["user_id", 1], ["post_id", 5], ["LIMIT", 1]]
+  ↳ app/models/post.rb:13:in `liked_by'
+  Rendered posts/_index.html.erb (Duration: 298.2ms | Allocations: 180702)
+  Rendered searchs/search.html.erb within layouts/application (Duration: 300.7ms | Allocations: 180770)
+  Rendered layout layouts/application.html.erb (Duration: 305.3ms | Allocations: 180835)
+Completed 500 Internal Server Error in 350ms (ActiveRecord: 67.3ms | Allocations: 190109)
+
+
+  
+ActionView::Template::Error (Missing partial searchs/_like_text, application/_like_text with {:locale=>[:ja], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/var/www/footomo/app/views"
+  * "/usr/local/bundle/gems/kaminari-core-1.2.1/app/views"
+  * "/usr/local/bundle/gems/devise-4.8.0/app/views"
+  * "/usr/local/bundle/gems/actiontext-6.1.3.2/app/views"
+  * "/usr/local/bundle/gems/actionmailbox-6.1.3.2/app/views"
+):
+    39:             <%= link_to "", "#", class: "comment" %>
+    40:           </div>
+    41:           <div id="like-text-post-<%= post.id.to_s %>">
+    42:             <%= render "like_text", { likes: post.likes } %>
+    43:           </div>
+    44:           <%# <div><strong>「いいね！」10件</strong></div> %>
+    45:           <div>
+  
+app/views/posts/_index.html.erb:42
+app/views/posts/_index.html.erb:1
+app/views/searchs/search.html.erb:6
