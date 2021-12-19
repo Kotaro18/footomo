@@ -39,7 +39,7 @@
             <%= link_to "", "#", class: "comment" %>
           </div>
           <div id="like-text-post-<%= post.id.to_s %>">
-            <%= render "like_text", { likes: post.likes } %>
+            <%= render "posts/like_text", { likes: post.likes } %>
           </div>
           <%# <div><strong>「いいね！」10件</strong></div> %>
           <div>
@@ -48,7 +48,7 @@
             <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post), class: "post-time no-text-decoration" %>
             
             <div id="comment-post-<%= post.id.to_s %>">
-              <%= render 'comment_list', { post: post } %>
+              <%= render 'posts/comment_list', { post: post } %>
             </div>
             <%= link_to time_ago_in_words(post.created_at).upcase + "前", post_path(post),
               class: "light-color post-time no-text-decoration" %>
