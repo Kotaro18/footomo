@@ -1,10 +1,24 @@
 .carousel-item {
-  background-image: url("star.png");  
+  // background-image: url("yasai.png");  
   font-size: 15.0rem;
+  color: white;
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  height: auto;
+}
+
+.img-fluid1 {
+  background-image: url("yasai.png");
+}
+
+.img-fluid2 {
+  background-image: url("coffee.png");
+}
+
+.img-fluid3 {
+  background-image: url("bread.png");
 }
 
 // .bd-placeholder-img {
